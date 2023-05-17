@@ -354,7 +354,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/EnemyShot.cs"
-"Assets/Script/OAKDemo.cs"
+"Assets/Script/OAKDevice.cs"
 "Assets/Script/PlayerMove.cs"
 -langversion:9.0
 

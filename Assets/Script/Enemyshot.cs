@@ -24,5 +24,6 @@ public class EnemyShot : MonoBehaviour
     {
         GameObject shotObj = Instantiate(ball, transform.position, Quaternion.identity);
         shotObj.GetComponent<Rigidbody>().velocity = transform.forward * ballSpeed;
+        Destroy(shotObj, 5.0f); // ボールが5秒後に消えるように設定
     }
 }
