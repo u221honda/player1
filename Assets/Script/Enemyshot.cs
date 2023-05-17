@@ -16,7 +16,7 @@ public class EnemyShot : MonoBehaviour
         if(time <= 0)
         {
             BallShot();
-            time = 0.5f;
+            time = 0.1f;
         }
     }
  

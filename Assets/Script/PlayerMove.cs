@@ -7,7 +7,7 @@ public class PlayerMove : MonoBehaviour
     private float speed = 5.0f;
  
     void Update()
-    {
+    {   //操作部分
         if (Input.GetKey ("up")){
             transform.position += transform.up * speed * Time.deltaTime;
         }
