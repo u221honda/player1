@@ -24,6 +24,10 @@ public class EnemyShot : MonoBehaviour
     {//新しいボールを生成して、発射する
         GameObject shotObj = Instantiate(ball, transform.position, Quaternion.identity);
         shotObj.GetComponent<Rigidbody>().velocity = transform.forward * ballSpeed;
-        Destroy(shotObj, 5.0f); // ボールが5秒後に消えるように設定
+           // ボールにコライダーを追加し、プレイヤーとの衝突時にボールを消す
+        SphereCollider ballCollider = shotObj.AddComponent<SphereCollider>();
+        ballCollider.isTrigger = true;
+        BallCollision ballCollision = shotObj.AddComponent<BallCollision>();
+        ballCollision.player = player;
     }
 }
