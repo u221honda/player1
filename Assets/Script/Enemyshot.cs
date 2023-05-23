@@ -16,13 +16,14 @@ public class EnemyShot : MonoBehaviour
         if(time <= 0)
         {
             BallShot();
-            time = 0.5f;
+            time = 0.1f;
         }
     }
  
     void BallShot()
-    {
+    {//新しいボールを生成して、発射する
         GameObject shotObj = Instantiate(ball, transform.position, Quaternion.identity);
         shotObj.GetComponent<Rigidbody>().velocity = transform.forward * ballSpeed;
+        Destroy(shotObj, 5.0f); // ボールが5秒後に消えるように設定
     }
 }
