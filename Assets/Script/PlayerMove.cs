@@ -21,4 +21,11 @@ public class PlayerMove : MonoBehaviour
             transform.position -= transform.right * speed * Time.deltaTime;
         }
     }
+
+ //playerにボールが当たると消えるように設定した
+    void OnCollisionEnter(Collision other){
+        if(other.gameObject.CompareTag("Ball1")){
+            Destroy(other.gameObject);
+        } 
+    }
 }
