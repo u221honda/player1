@@ -354,8 +354,13 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Script/EnemyShot.cs"
-"Assets/Script/OAKDevice.cs"
+"Assets/Script/OAK for Unity/BodyPoseCanvasController.cs"
+"Assets/Script/OAK for Unity/DaiBodyPose.cs"
+"Assets/Script/OAK for Unity/OAKDevice.cs"
+"Assets/Script/OAK for Unity/PredefinedBase.cs"
+"Assets/Script/OAK for Unity/SimpleJSON.cs"
 "Assets/Script/PlayerMove.cs"
+"Assets/Script/Ul.cs"
 -langversion:9.0
 
 /deterministic
