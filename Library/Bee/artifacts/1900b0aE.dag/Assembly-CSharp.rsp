@@ -358,7 +358,9 @@
 "Assets/Script/OAK for Unity/DaiBodyPose.cs"
 "Assets/Script/OAK for Unity/OAKDevice.cs"
 "Assets/Script/OAK for Unity/PredefinedBase.cs"
+"Assets/Script/OAK for Unity/Scenes/CubeController.cs"
 "Assets/Script/OAK for Unity/SimpleJSON.cs"
+"Assets/Script/OAK for Unity/UIMenuManager.cs"
 "Assets/Script/PlayerMove.cs"
 "Assets/Script/Ul.cs"
 -langversion:9.0

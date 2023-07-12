@@ -36,12 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\Enemyshot.cs" />
+     <Compile Include="Assets\Script\EnemyShot.cs" />
      <Compile Include="Assets\Script\OAK for Unity\PredefinedBase.cs" />
      <Compile Include="Assets\Script\PlayerMove.cs" />
      <Compile Include="Assets\Script\OAK for Unity\BodyPoseCanvasController.cs" />
      <Compile Include="Assets\Script\OAK for Unity\DaiBodyPose.cs" />
+     <Compile Include="Assets\Script\OAK for Unity\Scenes\CubeController.cs" />
      <Compile Include="Assets\Script\Ul.cs" />
+     <Compile Include="Assets\Script\OAK for Unity\UIMenuManager.cs" />
      <Compile Include="Assets\Script\OAK for Unity\SimpleJSON.cs" />
      <Compile Include="Assets\Script\OAK for Unity\OAKDevice.cs" />
     <Reference Include="UnityEngine">
