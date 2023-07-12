@@ -9,21 +9,30 @@ public class EnemyShot : MonoBehaviour
     private float ballSpeed = 10.0f;
     private float time = 1.0f;
 
+
     void Update()
     {
-        transform.LookAt(player.transform);
+        //transform.LookAt(player.transform);//ここを編集したら玉がplayerに向かわなくなるはず
         time -= Time.deltaTime;
         if(time <= 0)
-        {
+        { 
             BallShot();
-            time = 0.1f;
+            time = 0.1f;//ballの速度
         }
     }
- 
+
+    
+    private int vecX;
+    private int vecY; 
     void BallShot()
-    {//新しいボールを生成して、発射する
-        GameObject shotObj = Instantiate(ball, transform.position, Quaternion.identity);
+    {    
+
+        vecX = Random.Range(-3,3);
+        vecY = Random.Range(-3,3);  
+        //新しいボールを生成して、発射する
+        GameObject shotObj = Instantiate(ball,new Vector3(vecX,vecY,5) , Quaternion.identity);
         shotObj.GetComponent<Rigidbody>().velocity = transform.forward * ballSpeed;
-        Destroy(shotObj, 5.0f); // ボールが5秒後に消えるように設定
+        //Objectを消す関数
+       Destroy(shotObj, 10f);                                                                       
     }
 }
