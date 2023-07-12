@@ -37,15 +37,24 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets\Script\EnemyShot.cs" />
-     <Compile Include="Assets\Script\OAK for Unity\PredefinedBase.cs" />
+     <Compile Include="Assets\Script\Predefined\Streams\StreamsCanvasController.cs" />
      <Compile Include="Assets\Script\PlayerMove.cs" />
-     <Compile Include="Assets\Script\OAK for Unity\BodyPoseCanvasController.cs" />
-     <Compile Include="Assets\Script\OAK for Unity\DaiBodyPose.cs" />
-     <Compile Include="Assets\Script\OAK for Unity\Scenes\CubeController.cs" />
+     <Compile Include="Assets\Script\Predefined\Streams\PointCloudVFXCanvasController.cs" />
+     <Compile Include="Assets\Script\Predefined\ObjectDetector\ObjectDetectorCanvasController.cs" />
+     <Compile Include="Assets\Script\Predefined\PredefinedBase.cs" />
+     <Compile Include="Assets\Script\Scenes\CubeController.cs" />
+     <Compile Include="Assets\Script\Predefined\ObjectDetector\DaiObjectDetector.cs" />
+     <Compile Include="Assets\Script\OAKDevice.cs" />
+     <Compile Include="Assets\Script\Extra\SimpleJSON.cs" />
+     <Compile Include="Assets\Script\Predefined\FaceEmotion\DaiFaceEmotion.cs" />
+     <Compile Include="Assets\Script\Predefined\FaceDetector\FaceDetectorCanvasController.cs" />
+     <Compile Include="Assets\Script\Predefined\BodyPose\DaiBodyPose.cs" />
      <Compile Include="Assets\Script\Ul.cs" />
-     <Compile Include="Assets\Script\OAK for Unity\UIMenuManager.cs" />
-     <Compile Include="Assets\Script\OAK for Unity\SimpleJSON.cs" />
-     <Compile Include="Assets\Script\OAK for Unity\OAKDevice.cs" />
+     <Compile Include="Assets\Script\Predefined\FaceDetector\DaiFaceDetector.cs" />
+     <Compile Include="Assets\Script\Predefined\Streams\DaiStreams.cs" />
+     <Compile Include="Assets\Script\Predefined\FaceEmotion\FaceEmotionCanvasController.cs" />
+     <Compile Include="Assets\Script\Predefined\BodyPose\BodyPoseCanvasController.cs" />
+     <Compile Include="Assets\Script\Predefined\Streams\DaiPointCloudVFX.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
