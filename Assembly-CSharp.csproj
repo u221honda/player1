@@ -36,14 +36,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\CubePeopleDemo\Scripts\AnimationController.cs" />
      <Compile Include="Assets\Script\EnemyShot.cs" />
      <Compile Include="Assets\Script\Predefined\Streams\StreamsCanvasController.cs" />
      <Compile Include="Assets\Script\PlayerMove.cs" />
      <Compile Include="Assets\Script\Predefined\Streams\PointCloudVFXCanvasController.cs" />
+     <Compile Include="Assets\CubePeopleDemo\Scripts\CubePeopleTraffic.cs" />
      <Compile Include="Assets\Script\Predefined\ObjectDetector\ObjectDetectorCanvasController.cs" />
      <Compile Include="Assets\Script\Predefined\PredefinedBase.cs" />
      <Compile Include="Assets\Script\Scenes\CubeController.cs" />
+     <Compile Include="Assets\CubePeopleDemo\Scripts\EightDirectionMovement.cs" />
      <Compile Include="Assets\Script\Predefined\ObjectDetector\DaiObjectDetector.cs" />
+     <Compile Include="Assets\CubePeopleDemo\Scripts\FollowTarget.cs" />
      <Compile Include="Assets\Script\OAKDevice.cs" />
      <Compile Include="Assets\Script\Extra\SimpleJSON.cs" />
      <Compile Include="Assets\Script\Predefined\FaceEmotion\DaiFaceEmotion.cs" />
@@ -60,6 +64,7 @@
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+     <None Include="Assets\CubePeopleDemo\Readme.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
