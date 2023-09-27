@@ -1,2 +1,3 @@
 # player1
-- Webカメラを使ったとこ
+- 主にOpenCvplusUnityでWebカメラを使って動かすとこ.
+- 20230927
