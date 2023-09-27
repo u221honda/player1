@@ -157,7 +157,6 @@
      <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\PInvoke\features2d\NativeMethods_features2d_BOW.cs" />
      <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\ml\ParamGrid.cs" />
      <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\xfeatures2d\StarDetector.cs" />
-     <Compile Include="Assets\Script\FaceDector\FaceDector.cs" />
      <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\Mat.cs" />
      <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\calib3d\StereoSGBM.cs" />
      <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Mat\Mat_CvMethods.cs" />
@@ -443,12 +442,14 @@
      <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\core\Struct\KeyPoint.cs" />
      <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\modules\features2d\GFTTDetector.cs" />
      <Compile Include="Assets\OpenCV+Unity\Assets\Scripts\OpenCvSharp\Util\PlatformUtil.cs" />
+     <Compile Include="Assets\Script\FaceDector\FaceDector.cs" />
      <None Include="Assets\OpenCV+Unity\Demo\Face_Detector\haarcascade_eye.xml" />
      <None Include="Assets\OpenCV+Unity\Documentation\Third-Party Licenses.txt" />
      <None Include="Assets\OpenCV+Unity\smcs.rsp" />
      <None Include="Assets\OpenCV+Unity\gmcs.rsp" />
      <None Include="Assets\OpenCV+Unity\Documentation\OpenCV+Unity_Notes.txt" />
      <None Include="Assets\OpenCV+Unity\Demo\Face_Detector\haarcascade_eye_tree_eyeglasses.xml" />
+     <None Include="Assets\Script\FaceDector\haarcascade_frontalface_default.xml" />
      <None Include="Assets\OpenCV+Unity\Demo\Face_Recognizer\face-recognizer.xml" />
      <None Include="Assets\OpenCV+Unity\Demo\Face_Detector\haarcascade_frontalface_default.xml" />
      <None Include="Assets\OpenCV+Unity\mcs.rsp" />
