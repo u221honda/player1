@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using OpenCvSharp;
+using UnityEngine.UI;
 
 public class FaceDector : MonoBehaviour
 {
@@ -26,7 +27,7 @@ void Update()
     findNewFace(frame);
     display(frame);
 }
-
+//HaarCascadeに関するもの
     void findNewFace(Mat frame){
         var faces = cascade.DetectMultiScale(frame, 1.1, 2, HaarDetectionType.ScaleImage);
 
