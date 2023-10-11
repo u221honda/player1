@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using OpenCvSharp;
 using UnityEngine.UI;
-
+using OpenCvSharp.CPlusPlus;
 public class FaceDector : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -30,7 +30,7 @@ void Update()
 //HaarCascadeに関するもの
     void findNewFace(Mat frame){
         var faces = cascade.DetectMultiScale(frame, 1.1, 2, HaarDetectionType.ScaleImage);
-
+        
         if(faces.Length >= 1){
            Debug.Log(faces[0].Location);
            MyFace = faces[0];
