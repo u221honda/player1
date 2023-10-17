@@ -758,7 +758,7 @@
 "Assets/OpenCV+Unity/Demo/Scripts/WebCamera.cs"
 "Assets/OpenCV+Unity/Demo/Tracking/TrackingScript.cs"
 "Assets/Script/FaceDector/FaceDector.cs"
-"Assets/Script/Pleyer/Enemyshot.cs"
+"Assets/Script/Pleyer/EnemyShot.cs"
 "Assets/Script/Pleyer/PlayerMove.cs"
 -langversion:9.0
 /unsafe+
