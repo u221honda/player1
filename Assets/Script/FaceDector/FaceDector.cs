@@ -31,14 +31,15 @@ public class FaceDector : MonoBehaviour
     if (placedObject != null && MyFace != null)
     {
         // 顔の中心座標を取得
-        Vector3 faceCenter = new Vector3(MyFace.X + MyFace.Width / 2, MyFace.Y + MyFace.Height / 2, 0);
+        Vector3 faceCenter = new Vector3(MyFace.X - MyFace.Width / 2 - 500, MyFace.Y + MyFace.Height / 2 - 500, 0);
 
         // 顔の検出位置の200分の1にする
-        faceCenter /= 200f;
+        faceCenter /= 100f;
         // Z座標を20に設定
         faceCenter.z = 20f;
         // オブジェクトの座標を設定
         placedObject.transform.position = faceCenter;
+
     }
 
         // 青い四角を表示する
@@ -65,6 +66,7 @@ public class FaceDector : MonoBehaviour
             if (placedObject == null)
             {
                 placedObject = Instantiate(objectToPlace);
+                placedObject.transform.position = new Vector3(-500f, -500f, 0f); // x軸とy軸を-500に設定
             }
         }
         else
