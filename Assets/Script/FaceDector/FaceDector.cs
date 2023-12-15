@@ -22,13 +22,14 @@ public class FaceDector : MonoBehaviour
 
     void Update()
     {
-        GetComponent<Renderer>().material.mainTexture = _WebCamTexture;
+       // GetComponent<Renderer>().material.mainTexture = _WebCamTexture;
         Mat frame = OpenCvSharp.Unity.TextureToMat(_WebCamTexture);
 
         findNewFace(frame);
+        display(frame);
 
           // 検出された顔があればオブジェクトを顔と同じ座標に配置するようにしたい
-    if (placedObject != null && MyFace != null)
+  /*  if (placedObject != null && MyFace != null)
     {
         // 顔の中心座標を取得
         Vector3 faceCenter = new Vector3(MyFace.X - MyFace.Width / 2 - 500, MyFace.Y + MyFace.Height / 2 - 500, 0);
@@ -39,20 +40,11 @@ public class FaceDector : MonoBehaviour
         faceCenter.z = 20f;
         // オブジェクトの座標を設定
         placedObject.transform.position = faceCenter;
+    
 
+    }*/
     }
-
-        // 青い四角を表示する
-        if (MyFace != null)
-        {
-            frame.Rectangle(MyFace, new Scalar(250, 0, 0), 2);
-        }
-
-        // OpenCVのMatをTextureに変換して表示する処理
-        Texture newTexture = OpenCvSharp.Unity.MatToTexture(frame);
-        GetComponent<Renderer>().material.mainTexture = newTexture;
-    }
-
+   
     void findNewFace(Mat frame)
     {
         var faces = cascade.DetectMultiScale(frame, 1.1, 2, HaarDetectionType.ScaleImage);
@@ -66,12 +58,21 @@ public class FaceDector : MonoBehaviour
             if (placedObject == null)
             {
                 placedObject = Instantiate(objectToPlace);
-                placedObject.transform.position = new Vector3(-500f, -500f, 0f); // x軸とy軸を-500に設定
+                placedObject.transform.position = new Vector3(0f, 0f, 0f); 
             }
         }
-        else
-        {
-            // 顔が検出されていない場合は何もしない
-        }
+       
     }
+    void display(Mat frame)
+    {     // 青い四角を表示する
+        if (MyFace != null)
+        {
+            frame.Rectangle(MyFace, new Scalar(250, 0, 0), 2);
+        }
+
+        // OpenCVのMatをTextureに変換して表示する処理
+        Texture newTexture = OpenCvSharp.Unity.MatToTexture(frame);
+        GetComponent<Renderer>().material.mainTexture = newTexture;
+    }
+
 }

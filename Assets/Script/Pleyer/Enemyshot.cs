@@ -31,6 +31,6 @@ public class EnemyShot : MonoBehaviour
         GameObject shotObj = Instantiate(ball,new Vector3(vecX,vecY,30) , Quaternion.identity);
         shotObj.GetComponent<Rigidbody>().velocity = -transform.forward * ballSpeed;
         //Objectを消す関数
-       Destroy(shotObj, 10f);                                                                       
+       Destroy(shotObj, 5f);                                                                       
     }
 }
